@@ -1,15 +1,15 @@
 <template>
+<div class="container">
   <div id="app">
-    <ul class="menu">
-      <li><a href=""></a><a href="#/">Inicio</a></li>
-      <li><a href=""></a><a href="#/login">Login</a></li>
-      <p>{{usuario.nome}}</p>
-    </ul>
+    <MainPageMenu />
     <router-view/>
   </div>
+</div>
 </template>
 
 <script>
+import MainPageMenu from './components/MainPageMenu';
+
 export default {
   name: 'App',
   data() {
@@ -18,6 +18,9 @@ export default {
         nome: 'anderson',
       },
     };
+  },
+  components: {
+    MainPageMenu,
   },
 };
 </script>

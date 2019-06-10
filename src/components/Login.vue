@@ -8,19 +8,20 @@
       <b-jumbotron>
           <b-form v-on:submit="handleSubmit($event)">
             <b-form-group :label-cols="2" breakpoint="md" label="E-mail">
-              <b-form-input id="Usuario"
+              <b-form-input id="E-mail"
               placeholder="email@email.com"
               type="email" v-model="user.email"
               required>
               </b-form-input>
             </b-form-group>
               <b-form-group :label-cols="2" breakpoint="md" label="Senha">
-              <b-form-input id="password" type="password" v-model="user.password" required>
+              <b-form-input id="password"
+              type="password" v-model="user.password"
+              required>
               </b-form-input>
           </b-form-group>
           <b-button align-h="end" type="submit" variant="primary">Acessar</b-button>
         </b-form>
-
       </b-jumbotron>
     </b-col>
   </b-row>
